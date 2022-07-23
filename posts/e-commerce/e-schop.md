@@ -2,11 +2,11 @@
   title: 'You need your E-shop'
   date: '2022-07-18'
   category: 'e-commerce'
-  smallText: 'Do you need your own web shop? Short answer is -yes. Want to know more - read below...'
+  smallText: 'As you’re setting up your online store, you have the ability to customize any Shopify theme of your choice using a wide range of settings with our website builder....'
   image: 'e-shop-foto.jpg'
 ---
 
-![e-commerce e-shop alt](e-shop-foto.jpg)
+![e-commerce e-shop alt](office-windows-pattern.jpg)
 
 ## Make it your own
 As you’re setting up your online store, you have the ability to customize any Shopify theme of your choice using a wide range of settings with our website builder.
