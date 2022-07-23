@@ -1,0 +1,31 @@
+.article {
+  width: 45vw;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+  *border: solid 1px rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ;
+}
+
+.article:hover {
+  *background: rgb(220, 217, 217);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.6);
+}
+
+.article_title {
+  text-align: left;
+}
+
+.article_content span {
+  font-size: 1.2;
+  color:rgb(5, 72, 19);
+  transition: all 1s ease-out;
+}
+
+.article_content span:hover {
+  color:blueviolet;
+}
+

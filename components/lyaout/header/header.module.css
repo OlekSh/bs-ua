@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  padding: 10px 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: center;
+  color: #fff;
+  border: solid 1px black;
+}

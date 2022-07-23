@@ -1,0 +1,22 @@
+.prepost {
+  padding: 20px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  background-color: #2196F3;;
+  border-radius: 7px;
+  transition: all 1s;
+}
+.prepost:hover {
+  background: rgb(201, 199, 199);
+}
+.prepost h2 {
+  text-align: center;
+}
+/* .prepost:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+} */
+.prepost:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}

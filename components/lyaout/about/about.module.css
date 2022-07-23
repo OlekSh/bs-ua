@@ -1,0 +1,40 @@
+.about {
+  padding: 40px 0 60px;
+  background: #fff;
+}
+
+.about_container {
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: right;
+}
+
+.about_fon {
+  width: 40vw;
+  min-height: 100vh;
+  background: url('/images/site/desk-and-chair-small.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.about_content {
+  width: 55vW;
+  text-align: left;
+}
+
+.about_content h3 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.about_content p {
+  font-style: italic;
+  font-size: 1.8rem;
+
+}
+

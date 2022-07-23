@@ -1,0 +1,7 @@
+.postgrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  *column-gap: 40px;
+  *row-gap: 40px;
+  gap: 40px ;
+}
