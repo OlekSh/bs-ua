@@ -2,7 +2,7 @@
   padding: 20px;
   box-sizing: border-box;
   border: solid 1px black;
-  background-color: #2196F3;;
+  background: #fff;
   border-radius: 7px;
   transition: all 1s;
 }
@@ -15,8 +15,8 @@
 /* .prepost:first-child {
   grid-column-start: 1;
   grid-column-end: 3;
-} */
+} 
 .prepost:last-child {
   grid-column-start: 1;
   grid-column-end: 3;
-}
+}*/

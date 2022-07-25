@@ -8,7 +8,6 @@ function Article({post}) {
 
   return (
     <article className={classes.article}>
-      
           <div className={classes.article_img}>
             <Image 
               src={generImg}
@@ -31,9 +30,7 @@ function Article({post}) {
                 </a>
               </Link>
             </div>
-          </div>
-          
-      
+          </div>  
     </article>
   )
 }

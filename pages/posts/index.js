@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getAllPostCategories, getAllPostFiles, getAllPostsData } from "../../lib/posts-util";
 
-import PostGrid from '../../components/post/post-grid';
+import PostList from '../../components/post/post-list';
 
 function PostsPage({categories, files, posts}) {
   return(
@@ -22,7 +22,7 @@ function PostsPage({categories, files, posts}) {
             </li>)
           })}
       </ul>
-      <PostGrid posts={posts} />   
+      <PostList posts={posts} />   
     </section>
   )
 }

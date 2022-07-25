@@ -6,6 +6,9 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-content: center;
-  color: #fff;
   border: solid 1px black;
+}
+
+.header_fon {
+  background: #fff;
 }

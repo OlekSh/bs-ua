@@ -8,9 +8,16 @@ function PrePost(props) {
     <section className={classes.prepost} >
       <Link href={`/posts/${post.category}/${post.slug}`}>
         <a>
-          <h2>{post.title}</h2>
-          <h3>Category : {post.category}</h3>
-          <time>{post.date}</time>
+          <div className={classes.prepost_container}>
+          <div className={classes.prepost_img}>
+            
+          </div>
+          <div className={classes.prepost_info }>
+            <h2>{post.title}</h2>
+            <h3>Category : {post.category}</h3>
+            <time>{post.date}</time>
+          </div>
+          </div>
         </a>
       </Link>
     </section>
