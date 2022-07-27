@@ -10,7 +10,7 @@ function Article({post}) {
     <article className={classes.article}>
           <div className={classes.article_img}>
             <Image 
-              src={generImg}
+              src={`/images/posts/${post.category}/${post.image}`}
               alt='Placeholder for article'
               width={900}
               height={600}
@@ -19,7 +19,7 @@ function Article({post}) {
           </div>
           <div className={classes.article_info}>
             <h2 className={classes.article_title}>
-              Article Title {post.title}
+              {post.title}
             </h2>
             <h6>Category: {post.category}</h6>
             <div className={classes.article_content}>

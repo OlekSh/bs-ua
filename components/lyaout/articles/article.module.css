@@ -7,7 +7,7 @@
   grid-template-areas: 'img info';
   justify-content: space-between;
   color: #fff;
-  border: solid 1px #fff;
+  border-bottom: solid 1px #fff;
 }
 .article:nth-child(odd) {
   grid-template-areas: 'info img';
@@ -47,7 +47,6 @@
 }
 .article_img {
   width: 35vw;
-  border: solid 1px #fff;
 }
 .article_img img {
   display: block;

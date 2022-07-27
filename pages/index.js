@@ -13,9 +13,6 @@ export default function Home({ categories, posts }) {
       <Articles posts={posts}/>
       <Articles posts={posts}/>
       <Contact/>
-      <ul>
-        {categories.map((item) => <li key={item}>{item}</li>)}
-      </ul>
     </>
   )
 }

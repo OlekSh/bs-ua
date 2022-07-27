@@ -6,17 +6,23 @@
   border-radius: 7px;
   transition: all 1s;
 }
+
 .prepost:hover {
   background: rgb(201, 199, 199);
 }
+
 .prepost h2 {
-  text-align: center;
+  margin: 10px 0;
+  text-align: left;
 }
-/* .prepost:first-child {
-  grid-column-start: 1;
-  grid-column-end: 3;
-} 
-.prepost:last-child {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}*/
+
+.prepost_container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+
+.prepost_info {
+  padding-left: 40px;
+  height: 100%;
+  box-sizing: border-box;
+}
