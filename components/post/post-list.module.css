@@ -1,4 +1,5 @@
 .post_list {
+  min-height:  calc(100vh - 230px);
   background: #fff;
 }
 .post_list_container {

@@ -1,13 +1,7 @@
 .articles {
-  padding: 40px 0;
   background: #000;
-  border: solid 1px black;
 }
 
 .articles_container {
-  margin: 0 40px;
-  *display: grid;
-  *grid-template-columns: auto auto;
-  *grid-row-gap: 40px;
-
+  padding: 40px 40px;
 }

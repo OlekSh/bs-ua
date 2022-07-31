@@ -8,7 +8,7 @@
 }
 
 .prepost:hover {
-  background: rgb(201, 199, 199);
+  *background: rgb(201, 199, 199);
 }
 
 .prepost h2 {

@@ -8,15 +8,16 @@ import classes from './layout.module.css'
 
 function Layout(props) {
   const router = useRouter();
+  const isMain = router.asPath === '/';
 
   return (
-    <>
-      <Header fon={router.asPath !== '/'? 'white': ''}/>
+    <section className={isMain ? 'wrap_bg': ''}>
+      <Header fon={ isMain ? '': 'white'}/>
       <main className={classes.main}>
         {props.children}
       </main>
       <Footer/>
-    </>
+    </section>
     
   )
 }

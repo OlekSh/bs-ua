@@ -5,9 +5,6 @@ import { getAllPostCategories, getAllPostFiles, getPostData } from "../../../lib
 function PostPage({ category, slug, post }) {
   return (
     <section>
-      <h1>Post Page</h1>
-      <h2>Category: {category}</h2>
-      <h3>Slug: {slug}</h3>
       <Post post={post} />
     </section>
   )

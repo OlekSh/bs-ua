@@ -1,13 +1,15 @@
 .nav {
   padding: 20px ;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .nav a {
   margin-left: 40px;
-  font-weight: 700;
+  color: #fff;
+  font-weight: 500;
   transition: all 0.5s;
 }
 
 .nav a:hover {
   color: rgb(125, 117, 117);
+  text-decoration: underline;
 }

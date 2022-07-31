@@ -11,8 +11,6 @@ export default function Home({ categories, posts }) {
       <Introduction />
       <About/>
       <Articles posts={posts}/>
-      <Articles posts={posts}/>
-      <Contact/>
     </>
   )
 }

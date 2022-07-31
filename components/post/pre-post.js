@@ -22,7 +22,7 @@ function PrePost(props) {
           </div>
           <div className={classes.prepost_info }>
             <h2>{post.title}</h2>
-            <h3>Category : {post.category}</h3>
+            <h6>Category : {post.category}</h6>
             <time>{post.date}</time>
             <p>{post.smallText}</p>
           </div>

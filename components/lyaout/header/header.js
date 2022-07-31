@@ -11,7 +11,9 @@ function Header(props) {
 
   return(
     <header className={`${classes.header} ${fon ? classes.header_fon : ''}`}>
-      <Logo logo={siteData.logo} />
+      <Logo logo={siteData.logo} 
+      color={fon ? '' : '#fff'}
+      />
       <Nav />
     </header>
   )

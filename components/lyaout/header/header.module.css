@@ -6,9 +6,12 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-content: center;
-  border: solid 1px black;
 }
 
 .header_fon {
   background: #fff;
+}
+
+.header_fon nav a {
+  color: #000;
 }

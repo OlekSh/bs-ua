@@ -9,7 +9,7 @@ function Contact() {
     <section className={classes.contact}>
       <div className={classes.contact_container}>
         <div className={classes.contact_content}>
-           <h3>You can write us.</h3>
+           <h3>.</h3>
           <h4>Our letter {siteData.email}</h4>
         </div>
         <div className={classes.contact_fon}>
