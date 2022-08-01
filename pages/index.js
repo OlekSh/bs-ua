@@ -1,6 +1,6 @@
 import About from '../components/lyaout/about/about'
 import Articles from '../components/lyaout/articles/articles'
-import Contact from '../components/lyaout/contact/contact'
+//import Contact from '../components/lyaout/contact/contact'
 import Introduction from '../components/lyaout/introduction/introduction'
 import { getAllPostCategories, getAllPostsData } from '../lib/posts-util'
 

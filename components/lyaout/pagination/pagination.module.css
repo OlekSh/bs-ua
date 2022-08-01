@@ -1,0 +1,27 @@
+.pagination {
+  padding: 20px 0;
+  color: #fff;
+}
+
+.pagination_list {
+  list-style: none;
+  text-align: center;
+}
+.pagination_item {
+  display: inline;
+  padding: 10px 20px;
+}
+
+.pagination_item span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px red;
+}
+
+.pagination_item span:hover {
+  color:rgb(24, 21, 21);
+  background: rgb(144, 122, 122);
+}
+

@@ -5,3 +5,13 @@
 .articles_container {
   padding: 40px 40px;
 }
+
+.pagin_list {
+  color: #fff;
+  list-style: none;
+}
+
+.pagin_list li{
+  padding: 10px;
+  cursor: pointer;
+} 
