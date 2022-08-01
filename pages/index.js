@@ -17,7 +17,7 @@ export default function Home({ categories, posts }) {
 
 export function getStaticProps() {
   const categories = getAllPostCategories();
-  const posts =  getAllPostsData();
+  const posts =  getAllPostsData(6);
 
   return {
     props: {

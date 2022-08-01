@@ -6,12 +6,19 @@
   padding: 40px 40px;
 }
 
-.pagin_list {
-  color: #fff;
-  list-style: none;
+.articles_more {
+  text-align: center;
+  padding: 20px 0 40px;
 }
 
-.pagin_list li{
-  padding: 10px;
-  cursor: pointer;
-} 
+.articles_more a{
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+}
+
+.articles_more a:hover {
+  color: rgb(84, 78, 78);
+  text-decoration: underline;
+}

@@ -22,6 +22,7 @@ function Article({post}) {
               {post.title}
             </h2>
             <h6>Category: {post.category}</h6>
+            <time>{post.date}</time>
             <div className={classes.article_content}>
               <p>{post.smallText}</p>
               <Link href={`/posts/${post.category}/${post.slug}`}>
