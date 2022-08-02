@@ -1,6 +1,6 @@
 .pagination {
   padding: 20px 0;
-  color: #fff;
+  color: #000;
 }
 
 .pagination_list {
@@ -23,5 +23,9 @@
 .pagination_item span:hover {
   color:rgb(24, 21, 21);
   background: rgb(144, 122, 122);
+}
+
+.pagination_item_active span {
+  background: rgb(110, 32, 32);
 }
 

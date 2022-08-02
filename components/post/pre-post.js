@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import imgPlace from '../../public/images/posts/flatlay-on-world-map.jpg';
-
 import classes from  './pre-post.module.css';
 
 function PrePost(props) {
@@ -15,6 +13,7 @@ function PrePost(props) {
           <div className={classes.prepost_img}>
             <Image 
               src={`/images/posts/${post.category}/${post.image}`}
+              alt={post.category}
               width={400}
               height={300}
               fill='responsive'
