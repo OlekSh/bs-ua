@@ -1,12 +1,18 @@
+import Head from "next/head";
 import Post from "../../../components/post/post";
 
 import { getAllPostCategories, getAllPostFiles, getPostData } from "../../../lib/posts-util";
 
 function PostPage({ category, slug, post }) {
   return (
-    <section>
-      <Post post={post} />
-    </section>
+    <> 
+      <Head>
+        <title>{post.title}</title>
+      </Head>
+      <section>
+        <Post post={post} />
+      </section>
+    </>
   )
 }
 

@@ -19,6 +19,7 @@ function Post(props) {
       <div className={classes.post_container}>
       <ReactMarkdown
         className={classes.post_content}
+        children={post.content}
         components= {{
           img: ({node, ...props}) => {
             return (
@@ -44,9 +45,7 @@ function Post(props) {
           //   )
           // }
         }}
-      >
-        {post.content}
-      </ReactMarkdown>
+       />
       </div>
     </section>
   )

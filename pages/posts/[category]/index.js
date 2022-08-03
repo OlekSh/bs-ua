@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import Head from 'next/head';
 
 import PostList from "../../../components/post/post-list";
 import { getCategoryPosts } from "../../../lib/posts-util";
@@ -8,10 +8,15 @@ function CategoryPage(props) {
 
 
   return (
-    <section>
-      <h2>{category}</h2>
-      <PostList posts={posts} />
-    </section>
+    <>
+      <Head>
+        <title>{category.toUpperCase()}</title>
+      </Head>
+      <section>
+        <PostList posts={posts} />
+      </section>
+    </>
+    
   )
 }
 
