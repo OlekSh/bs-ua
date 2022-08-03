@@ -1,5 +1,4 @@
-.about {
-  
+.about {  
   background: #fff;
 }
 
@@ -8,23 +7,23 @@
   margin: auto;
   padding: 40px 40px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 45% 50%;
+  justify-content: space-between;
   text-align: right;
+  
 }
 
 .about_fon {
-  width: 40vw;
-  min-height: 100vh;
   background: url('/images/site/desk-and-chair-small.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 47% 100%;
   background-attachment: fixed;
-  background-position: left;
+  background-position: top left;
+  border: solid 1px red;
 }
 
 .about_content {
-  width: 55vW;
-  text-align: left;
+  text-align: right;
 }
 
 .about_content h3 {

@@ -3,7 +3,7 @@ import classes from './about.module.css';
 function About() {
   return(
     <section className={classes.about}>
-      <div className={classes.about_container}>
+      <div className={`${classes.about_container} container`}>
         <div className={classes.about_fon}></div>
         <div className={classes.about_content}>
           <h3>Хто ми ?</h3>

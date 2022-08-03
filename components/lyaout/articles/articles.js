@@ -6,7 +6,7 @@ function Articles(props) {
   const {posts} = props
   return (
     <section className={classes.articles}>
-      <div className={classes.articles_container}>
+      <div className={`${classes.articles_container} container`}>
         {
           posts.map((post) => {
             return <Article post={post} key={post.id} />

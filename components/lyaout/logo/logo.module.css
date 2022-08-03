@@ -3,3 +3,10 @@
   font-family: 'Lobster', cursive;
   color: rgb(8, 73, 22);
 }
+
+@media screen and (max-width: 1360px) {
+  .logo {
+    font-size: 2rem;
+    *grid-column: 1/3
+  }
+}

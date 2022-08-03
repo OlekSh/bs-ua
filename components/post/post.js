@@ -16,7 +16,7 @@ function Post(props) {
  
   return (
     <section className={classes.post}>
-      <div className={classes.post_container}>
+      <div className={`${classes.post_container} container`}>
       <ReactMarkdown
         className={classes.post_content}
         children={post.content}

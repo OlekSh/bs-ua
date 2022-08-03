@@ -1,15 +1,42 @@
 .nav {
-  padding: 20px ;
+  display: grid;
+  grid-template-columns: auto auto;
+  color: #fff;
   font-size: 1.2rem;
 }
-.nav a {
-  margin-left: 40px;
-  color: #fff;
+
+.nav_list {
+  list-style: none;
+  padding-left: 0;
+}
+.nav_list li {
+  display: inline;
+}
+.nav_list a {
+  padding: 10px;
   font-weight: 500;
   transition: all 0.5s;
 }
 
-.nav a:hover {
+.nav_list a:hover {
   color: rgb(125, 117, 117);
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1400px) {
+  .nav_list {
+    margin: 5px 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .nav_list a {
+    padding: 0 40px;
+  }
+
+  .nav_list:nth-child(odd)  {
+    text-align: right;
+  }
+
+}
+

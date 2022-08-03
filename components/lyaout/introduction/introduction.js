@@ -3,7 +3,7 @@ import classes from './introduction.module.css';
 function Introduction() {
   return  (
     <section className={classes.introd}>
-      <div className={classes.introd_container}>
+      <div className={`${classes.introd_container} container`}>
         <h3>Доброго вечора. Ми з України.</h3>
         <p>У цей важкий для країни час ми маємо згуртуватись.</p> 
         <p>Ми сильні. Ми витримаємо. Мирного Вам неба над головою.</p>
