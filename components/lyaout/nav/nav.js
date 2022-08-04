@@ -12,7 +12,7 @@ function Nav() {
 
   return (
     <>
-      <div className={classes.nav}>
+      <div className={`${classes.nav} ${isMain ? '': classes.nav_fon}`}>
         <ul className={classes.nav_list}>
           <li><Link href='/posts/business'><a>Бізнес</a></Link></li>
           <li><Link href='/posts/economy'><a>Економіка</a></Link></li>

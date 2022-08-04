@@ -6,15 +6,13 @@
   grid-template-columns: 13% 87%;
   justify-content: space-between;
   align-items: center;
-}
-
-.header_fon {
   background: #fff;
 }
 
-.header_fon nav a {
-  color: #000;
+.header_fon {
+  background: inherit;
 }
+
 
 @media screen and (max-width: 1400px) {
   .header {

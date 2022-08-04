@@ -12,7 +12,7 @@ function Layout(props) {
 
   return (
     <section className={isMain ? 'wrap_bg': ''}>
-      <Header fon={ isMain ? '': 'white'}/>
+      <Header isMain={ isMain }/>
       <main className={classes.main}>
         {props.children}
       </main>
