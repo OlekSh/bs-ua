@@ -7,9 +7,8 @@
 
 .footer_container {
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-auto-flow: column;
-  column-gap: 40px;
+  grid-template-columns: 200px 200px 200px;
+  grid-column: 40px;
 }
 
 .footer_menu {
@@ -24,6 +23,7 @@
 } 
 
 .footer_menu a:hover {
+  color: rgb(84, 78, 78);
   text-decoration: underline;
 }
 
@@ -38,4 +38,16 @@
   letter-spacing: 1.6px;
 }
 
+@media screen and (max-width: 720px) {
+  .footer_container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer_logo {
+    display: none;
+  }
+}
+ 
 

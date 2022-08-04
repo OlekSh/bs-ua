@@ -11,7 +11,7 @@ function Footer() {
 
   return(
     <footer className={classes.footer}>
-      <div className={classes.footer_container}>
+      <div className={`${classes.footer_container} container`}>
         <div className={classes.footer_logo}>
           <Logo 
               logo={siteData.logo} 
