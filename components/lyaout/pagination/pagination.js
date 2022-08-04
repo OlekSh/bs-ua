@@ -11,6 +11,7 @@ function createItems(length, handleClick, activePage) {
         ${activePage === i ? classes.pagination_item_active: ''}`
       }
       onClick={handleClick(i)}
+      key={i}
       >
         <span>{i}</span>
       </li>

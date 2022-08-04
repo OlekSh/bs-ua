@@ -8,8 +8,8 @@ function Articles(props) {
     <section className={classes.articles}>
       <div className={`${classes.articles_container} container`}>
         {
-          posts.map((post) => {
-            return <Article post={post} key={post.id} />
+          posts.map((post, id) => {
+            return <Article post={post} key={id} />
           })
         }
       </div>
