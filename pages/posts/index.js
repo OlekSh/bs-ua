@@ -4,7 +4,7 @@ import { getAllPostCategories, getAllPostFiles, getAllPostsData } from "../../li
 
 import PostList from '../../components/post/post-list';
 
-function PostsPage({categories, files, posts}) {
+function PostsPage({ posts}) {
   return(
     <>
       <Head>
@@ -16,14 +16,10 @@ function PostsPage({categories, files, posts}) {
 }
 
 export function getStaticProps() {
-  const categories = getAllPostCategories();
-  const allPostFiles = getAllPostFiles();
   const posts = getAllPostsData();
 
   return {
     props: {
-      categories,
-      files: allPostFiles,
       posts: posts
     }
   }
