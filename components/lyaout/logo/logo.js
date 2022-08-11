@@ -9,7 +9,6 @@ function Logo(props) {
         <a 
           style={{
             color: props.color || '',
-            fontSize: props.size || ''
           }} 
         >{ props.logo }</a>
       </Link>      

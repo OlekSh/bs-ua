@@ -12,7 +12,8 @@ function Header(props) {
   return(
     <header className={`${classes.header} ${isMain ? classes.header_fon : ''}`}>
       <Logo logo={siteData.logo} 
-      color={isMain ? '#fff' : ''}
+        color={isMain ? '#fff' : '#084916'}
+        fontSize={''}
       />
       <Nav isMain={isMain} />
     </header>

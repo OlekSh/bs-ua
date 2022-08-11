@@ -6,14 +6,9 @@ import PrePost from './pre-post';
 import classes from './post-list.module.css'
 
 function PostList(props) {
-  const { posts } = props;
-  const  postsCount = 4;
+  const { posts, count, category } = props;
+  const  postsOnPageCount = 4;
   const [ page, setPage ] = useState(1);
-  const [ postsPage , setPostsPage ] = useState(
-          posts.slice(0, postsCount).map((post) => (
-           <PrePost post={post} key={post.id} />
-         ))
-        )
 
   function handlePage(num) {
 
@@ -21,32 +16,30 @@ function PostList(props) {
                 
        }
 
-    useEffect(() => {
+  useEffect(() => {  
+    // work when link change category and path without ?page= begin new category from 1 page.
+     
+      if(props.page == 1) setPage(props.page)
+     
 
-      setPostsPage(posts.slice(
-        page == 1 ? page - 1 : (page * postsCount) - postsCount, 
-        page == 1 ? page + (postsCount-1) : page * postsCount
-        ).map((post) => (
-        <PrePost post={post} key={post.id} />
-       )))
+  }, [props.page])
 
-    },[page, posts])
-
-    useEffect(() => {
-      setPage(1);
-    }, [props.posts])
 
   return(
     <section className={classes.post_list}>
       <div className={classes.post_list_container}>
         <h1>Page {page} </h1>
         {
-          postsPage 
+          posts.map((post) => (
+            <PrePost post={post} key={post.id} />
+           ))
         }
         <Pagination 
-          len={Math.ceil(posts.length / postsCount)}
+          len={Math.ceil(count / postsOnPageCount)}
           handlePagination={handlePage}
           activePage={page}
+          category={category || ''}
+          page={page}
         />
       </div>
     </section>

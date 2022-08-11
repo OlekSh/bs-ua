@@ -1,7 +1,10 @@
+import Link from 'next/link';
+
 import classes from './pagination.module.css';
 
-function createItems(length, handleClick, activePage) {
+function createItems(length, handleClick, activePage, category) {
   const items = [];
+  const urlPath = category ? `/posts/${category}`: '/posts'
 
   for( let i = 1 ; i <= length; i++) {
 
@@ -13,7 +16,10 @@ function createItems(length, handleClick, activePage) {
       onClick={handleClick(i)}
       key={i}
       >
-        <span>{i}</span>
+        <Link href={`${urlPath}?page=${i}`}>
+          <a> <span>{i}</span> </a>
+        </Link>
+       
       </li>
       );
   }
@@ -21,13 +27,13 @@ function createItems(length, handleClick, activePage) {
 }
 
 function Pagination(props) {
-  const { len, handlePagination, activePage } = props;
+  const { len, handlePagination, activePage, category } = props;
 
   return (
     <div className={classes.pagination}>
       <ul className={classes.pagination_list}>
         { 
-          createItems(len, handlePagination, activePage)
+          createItems(len, handlePagination, activePage, category)
         }
       </ul>
     </div>
