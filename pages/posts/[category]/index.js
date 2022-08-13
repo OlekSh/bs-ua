@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
 import PostList from "../../../components/post/post-list";
-//import { getAllPostCategories, getCategoryPosts } from '../../../lib/posts-util';
 import { getCategoryPostsByIndex } from "../../../lib/posts-util";
 
 function CategoryPage(props) {
@@ -43,35 +42,6 @@ export function getServerSideProps(context) {
     }
   }
 }
-
-// export async function getStaticProps(context)  {
-//   const { category, page } = context.params;
-
-//   const posts = getCategoryPosts(category);
-
-//   console.log('!!!', context);
-
-//   return {
-//     props : {
-//       posts,
-//       category,
-//       count: 1
-//     }
-//   }
-// }
-
-
-// export async function  getStaticPaths() {
-//   const categories = await getAllPostCategories();
-//   console.log(categories);
-//   const paths = categories.map(category => (
-//     {params: {category}}
-//   ));
-//   return {
-//     paths,
-//     fallback: true
-//   }
-// }
 
 
 export default CategoryPage;
