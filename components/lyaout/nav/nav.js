@@ -53,7 +53,7 @@ function Nav(props) {
             <a>Промисловість</a></Link></li>
           <li><Link href='/posts/e-commerce'><a>Є-комерція</a></Link></li>
           <li><Link href='/posts/energy'><a>Енергетика</a></Link></li>
-          <li><Link href='/posts/energy'><a>Енергетика</a></Link></li>
+          <li><Link href='/contact'><a>Контакт</a></Link></li>
         </ul>
       </div>
     </>

@@ -1,23 +1,17 @@
-import { useContext } from 'react';
-import ContextSite from '../../../context/contextSite';
+import Form from '../form/form';
 import classes from './contact.module.css';
 
+
 function Contact() {
-  const siteData = useContext(ContextSite);
-
-  return(
+  return  (
     <section className={classes.contact}>
-      <div className={classes.contact_container}>
-        <div className={classes.contact_content}>
-           <h3>.</h3>
-          <h4>Our letter {siteData.email}</h4>
-        </div>
-        <div className={classes.contact_fon}>
-
-        </div>
+      <div className={`${classes.container} container`}>
+            <Clock />
+        <h2 className={classes.contact_title}>Якщо є питання напишіть нам</h2>
+        <Form />
       </div>
     </section>
   )
 }
 
-export default Contact;
+export default Contact

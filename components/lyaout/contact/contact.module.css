@@ -1,37 +1,7 @@
 .contact {
-  *padding: 40px 0;
-  background: #fff;
-  border: solid 1px black;
+  outline: solid 1px black;
 }
 
-.contact_container {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 49vw 50vw;
+.contact_title {
   text-align: center;
 }
-.contact_content {
-  
-  padding: 40px 0;
-}
-.contact_content h3 {
-  text-transform: uppercase;
-}
-
-.contact_content h4 {
-  color: rgb(24, 17, 17)
-}
-
-.contact_fon {
-
-  height: 100%;
-  background: url('/images/site/contact-us-lettering .jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: solid 1px black;
-
-}
-
-
-

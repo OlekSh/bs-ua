@@ -28,7 +28,6 @@ function PostList(props) {
   return(
     <section className={classes.post_list}>
       <div className={classes.post_list_container}>
-        <h1>Page {page} </h1>
         {
           posts.map((post) => (
             <PrePost post={post} key={post.id} />

@@ -33,16 +33,6 @@ function Post(props) {
                 />
             )
           }
-          // img:({node}) => {
-          //   const imgPath = ImagePath(post.category, node.properties.src)
-          //   return (
-          //     <img 
-          //       className={classes.post_img}
-          //       src={imgPath}
-          //       alt={node.properties.alt}
-          //     />
-          //   )
-          // }
         }}
        >
         {post.content}
