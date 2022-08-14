@@ -5,13 +5,17 @@ import { getPostsDataByIndex } from "../../lib/posts-util";
 import PostList from '../../components/post/post-list';
 
 function PostsPage({posts, count}) {
-
+  
   return(
     <>
       <Head>
         <title>Публікації</title>
       </Head>
-      <PostList posts={posts} count={count} />   
+      <h2>All Posts {count}</h2>
+      <PostList 
+        posts={posts} 
+        count={count} 
+        />   
     </>
   )
 }

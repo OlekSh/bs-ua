@@ -7,7 +7,8 @@ import '../styles/globals.css'
 const siteDate = {
   logo: 'BS-UA',
   studia: "OlexWeb",
-  email: 'sourceregister@gmail.com'
+  email: 'sourceregister@gmail.com',
+  postsOnPage: 4,
 }
 
 function MyApp({ Component, pageProps }) {

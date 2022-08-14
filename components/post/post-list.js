@@ -6,8 +6,7 @@ import PrePost from './pre-post';
 import classes from './post-list.module.css'
 
 function PostList(props) {
-  const { posts, count, category } = props;
-  const  postsOnPageCount = 4;
+  const { posts, count, category, postsOnPageCount} = props;
   const [ page, setPage ] = useState(1);
 
   function handlePage(num) {
