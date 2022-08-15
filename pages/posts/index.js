@@ -3,9 +3,10 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import { getPostsDataByIndex } from "../../lib/posts-util";
-import ContextSite from '../../context/contextSite'
 
-import PostWrap from '../../components/lyaout/post_wrap/post_wrap';
+
+import PostWrap from '../../components/post/post_wrap/post_wrap';
+import ContextSite from '../../context/contextSite';
 
 function PostsPage({posts, count}) {
   const router = useRouter();
