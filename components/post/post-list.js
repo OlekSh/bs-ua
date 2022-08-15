@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import Pagination from '../lyaout/pagination/pagination';
 import PrePost from './pre-post';
 
+
 import classes from './post-list.module.css'
 
 function PostList(props) {
-  const { posts, count, category, postsOnPageCount} = props;
+  const { posts, count, countPostsOnPage, category } = props
   const [ page, setPage ] = useState(1);
+  const countPages = Math.ceil(count / countPostsOnPage) // numbers pages
 
   function handlePage(num) {
 
@@ -27,17 +29,22 @@ function PostList(props) {
   return(
     <section className={classes.post_list}>
       <div className={classes.post_list_container}>
-        {
-          posts.map((post) => (
-            <PrePost post={post} key={post.id} />
-           ))
-        }
         <Pagination 
-          len={Math.ceil(count / postsOnPageCount)}
+          len={countPages}
           handlePagination={handlePage}
           activePage={page}
           category={category || ''}
-          page={page}
+        />
+        {
+          posts.map((post) => (
+            <PrePost key={post.id} post={post} />
+           ))
+        }
+        <Pagination 
+          len={countPages}
+          handlePagination={handlePage}
+          activePage={page}
+          category={category || ''}
         />
       </div>
     </section>

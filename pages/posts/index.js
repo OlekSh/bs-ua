@@ -1,21 +1,26 @@
+import { useContext } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import { getPostsDataByIndex } from "../../lib/posts-util";
+import ContextSite from '../../context/contextSite'
 
-import PostList from '../../components/post/post-list';
+import PostWrap from '../../components/lyaout/post_wrap/post_wrap';
 
 function PostsPage({posts, count}) {
-  
+  const router = useRouter();
+  const { page } = router.query;
+  const ctx = useContext(ContextSite);
+
   return(
     <>
       <Head>
         <title>Публікації</title>
       </Head>
-      <h2>All Posts {count}</h2>
-      <PostList 
-        posts={posts} 
-        count={count} 
-        />   
+      <PostWrap  
+        page={page} 
+        countOnPage={ctx.postsOnPage}
+      />
     </>
   )
 }
