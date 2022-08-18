@@ -29,9 +29,10 @@ function PostWrap(props) {
       <h3>Count { countAllPosts }</h3>
       <PostList 
         posts={posts} 
-        countPostsOnPage={props.countOnPage} 
+        countPostsOnPage={countOnPage} 
         count={countAllPosts}
         category={category}
+        page={page}
       />
     </section>
   )

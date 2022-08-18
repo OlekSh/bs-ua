@@ -13,10 +13,6 @@ function CategoryPage(props) {
   const ctx = useContext(ContextSite);
 
 
-  console.log('??? ', router);
-
-
-
   return (
     <>
       <Head>

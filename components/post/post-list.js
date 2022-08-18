@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Pagination from '../lyaout/pagination/pagination';
 import PrePost from './pre-post';
 
-
 import classes from './post-list.module.css'
 
 function PostList(props) {
