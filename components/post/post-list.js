@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Pagination from '../lyaout/pagination/pagination';
 import PrePost from './pre-post';
 
+
 import classes from './post-list.module.css'
 
 function PostList(props) {
@@ -28,12 +29,6 @@ function PostList(props) {
   return(
     <section className={classes.post_list}>
       <div className={classes.post_list_container}>
-        <Pagination 
-          len={countPages}
-          handlePagination={handlePage}
-          activePage={page}
-          category={category || ''}
-        />
         {
           posts.map((post) => (
             <PrePost key={post.id} post={post} />
