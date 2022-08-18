@@ -14,10 +14,11 @@
 
 .pagination_item span {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
+  font-family: 'Lobster', cursive;
   border-radius: 50%;
-  border: solid 1px red;
+  border: solid 3px red;
 }
 
 .pagination_item span:hover {
@@ -26,6 +27,7 @@
 }
 
 .pagination_item_active span {
+  color: #fff;
   background: rgb(110, 32, 32);
 }
 

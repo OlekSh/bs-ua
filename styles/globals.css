@@ -4,9 +4,16 @@ font-size: 1.1rem
 font-family: 'Exo 2', sans-serif;
 color: #000;
 
+ 
+
 
 LOGO color
 color: #084916;
+font-family: 'Lobster', cursive;
+
+HOVER 
+:hover 
+color: rgb(84, 78, 78);
 
 */
 
