@@ -5,11 +5,11 @@
   background: #fff;
   transition: all 1s;
   border-radius: 7px;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 4px 4px 15px 0px rgba(0,0,0,0.3), 0px 0px 0px 5px rgba(0,0,0,0);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1), inset 4px 4px 15px 0px rgba(0,0,0,0.1), 0px 0px 0px 5px rgba(0,0,0,0);
 }
 
 .prepost:hover {
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.8), inset 4px 4px 15px 0px rgba(0,0,0,0.8), 0px 0px 0px 5px rgba(0,0,0,0);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 4px 4px 15px 0px rgba(0,0,0,0.3), 0px 0px 0px 5px rgba(0,0,0,0);
 }
 
 .prepost h2 {
