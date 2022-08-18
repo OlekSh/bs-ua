@@ -1,14 +1,15 @@
 .prepost {
   padding: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box;
-  border: solid 1px black;
   background: #fff;
-  border-radius: 7px;
   transition: all 1s;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 4px 4px 15px 0px rgba(0,0,0,0.3), 0px 0px 0px 5px rgba(0,0,0,0);
 }
 
 .prepost:hover {
-  *background: rgb(201, 199, 199);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.8), inset 4px 4px 15px 0px rgba(0,0,0,0.8), 0px 0px 0px 5px rgba(0,0,0,0);
 }
 
 .prepost h2 {

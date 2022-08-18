@@ -1,3 +1,15 @@
+/*
+GLOBAL VALUES FOR WHOLE SITE
+font-size: 1.1rem
+font-family: 'Exo 2', sans-serif;
+color: #000;
+
+
+LOGO color
+color: #084916;
+
+*/
+
 html,
 body {
   min-width: 480px;
@@ -46,6 +58,3 @@ h4 {
   margin: auto;
   overflow: hidden;
 }
-/* :hover {
-  color: rgb(84, 78, 78);
-} */

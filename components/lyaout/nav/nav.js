@@ -46,7 +46,6 @@ function Nav(props) {
           <li><Link href='/posts/economy'><a>Економіка</a></Link></li>
           <li><Link href='/posts/investments'><a>Інвестиції</a></Link></li>
           <li><Link href='/posts/finance'><a>Фінанси</a></Link></li>
-          <li><Link href='/posts/finance'><a>Фінанси</a></Link></li>
         </ul>
         <ul className={classes.nav_list}>
           <li><Link href='/posts/industry'>
