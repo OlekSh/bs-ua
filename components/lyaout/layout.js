@@ -11,7 +11,7 @@ function Layout(props) {
   const isMain = router.asPath === '/';
 
   return (
-    <section className={isMain ? 'wrap_bg': ''}>
+    <section className={`${classes.wrap_main} ${isMain ? 'wrap_bg': ''}`}>
       <Header isMain={ isMain }/>
       <main className={classes.main}>
         {props.children}
