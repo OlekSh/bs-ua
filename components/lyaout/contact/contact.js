@@ -6,7 +6,6 @@ function Contact() {
   return  (
     <section className={classes.contact}>
       <div className={`${classes.container} container`}>
-            <Clock />
         <h2 className={classes.contact_title}>Якщо є питання напишіть нам</h2>
         <Form />
       </div>
