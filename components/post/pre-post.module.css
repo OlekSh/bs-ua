@@ -22,15 +22,21 @@
   grid-template-columns: 30% 60%;
 }
 
+
 .prepost_info {
   padding-left: 40px;
   height: 100%;
   box-sizing: border-box;
 }
 
-@media screen and  (max-width: 980px) {
+@media screen and (max-width: 980px) {
   .prepost_container {
     display: block;
+  }
+  
+  .prepost_img {
+    width: 100%;
+    text-align: center;
   }
   
 }
