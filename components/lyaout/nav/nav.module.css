@@ -103,6 +103,8 @@
 
   .nav_list {
     margin: 0;
+    max-height: 100vh;
+    overflow: auto;
     display: none;
     border-radius: 3px;
   }
