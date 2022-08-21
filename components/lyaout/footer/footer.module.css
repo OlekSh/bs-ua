@@ -1,5 +1,4 @@
 .footer {
-  padding: 40px 40px 20px 40px;
   box-sizing: bored-box;
   background: rgb(29, 23, 23);
   color: #fff;
@@ -42,6 +41,13 @@
   .footer_container {
     grid-template-columns: auto auto auto;
   }
+  .footer_info {
+    margin-top: 20px;
+  }
+  .footer_menu a {
+    padding: 10px 5px;
+    letter-spacing: 1.5px;
+  } 
 }
 
 @media screen and (max-width: 580px) {
