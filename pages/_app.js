@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ContextSite.Provider value={siteDate}>
       <Head >
-       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <Layout>
         <Component {...pageProps} />
