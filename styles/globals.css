@@ -62,5 +62,14 @@ h4 {
 .container {
   max-width: 1300px;
   margin: auto;
+  padding: 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
 }

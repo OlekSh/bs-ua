@@ -18,9 +18,9 @@ function Article({post}) {
         />
       </div>
       <div className={classes.article_info}>
-        <h3 className={classes.article_title}>
+        <h2 className={classes.article_title}>
           {post.title}
-        </h3>
+        </h2>
         <h5>Category: {post.category}</h5>
         <time>{post.date}</time>
         <div className={classes.article_content}>

@@ -48,3 +48,13 @@
   }
   
 }
+
+@media screen and (max-width: 600px) {
+  .prepost {
+    padding: 15px;
+  }
+
+  .prepost_info h2 {
+    text-align: left;
+  }
+}

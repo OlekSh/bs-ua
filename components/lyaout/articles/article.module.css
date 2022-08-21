@@ -4,7 +4,7 @@
   padding: 20px;
   display: grid;
   grid-template-areas: 'img info';
-  grid-template-columns: 35% 50%;
+  grid-template-columns: 35% 60%;
   justify-content: space-between;
   align-items:center;
   color: #fff;
@@ -12,16 +12,14 @@
 }
 .article:nth-child(odd) {
   grid-template-areas: 'info img';
-  grid-template-columns: 50% 35%;
+  grid-template-columns: 60% 35%;
 }
-
 .article_info {
   grid-area: info;
 }
 .article_img {
   grid-area: img ;
 }
-
 .article_info {
   padding: 0 20px;
   height: 100%;
@@ -34,7 +32,6 @@
   display: block;
   width: 100%;
 }
-
 .article_more {
   display: inline-block;
   margin-top: 20px;
@@ -43,7 +40,6 @@
   border: solid 1px #fff;
   transition: all 0.5s;
 }
-
 .article_more:hover {
   color: rgb(84, 78, 78);
   border-color: rgb(84, 78, 78);
@@ -53,8 +49,9 @@
   .article {
     display: block;
     margin-bottom: 20px;
-    padding: 20px 0;
+    padding: 20px 0; 
   }
+  
 }
 
 @media screen and (max-width: 600px) {

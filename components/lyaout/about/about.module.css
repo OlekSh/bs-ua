@@ -5,7 +5,6 @@
 .about_container {
   min-height: 100vh;
   margin: auto;
-  padding: 40px 40px;
   display: grid;
   grid-template-columns: 45% 50%;
   justify-content: space-between;
@@ -33,7 +32,6 @@
 .about_content p {
   font-style: italic;
   font-size: 1.8rem;
-
 }
 
 @media screen and (max-width: 980px) {
@@ -69,9 +67,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .about_container {
-    padding: 40px 20px;
-  }
   .about_content p {
     line-height: 1.8;
     font-size: 1.2rem; 
