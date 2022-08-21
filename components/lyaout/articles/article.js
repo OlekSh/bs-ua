@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import generImg  from '../../../public/images/posts/flatlay-on-world-map.jpg';
 import classes from './article.module.css'
 
 function Article({post}) {

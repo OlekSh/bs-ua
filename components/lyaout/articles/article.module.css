@@ -10,9 +10,17 @@
   color: #fff;
   border-bottom: solid 1px #fff;
 }
+.article a {
+  display: block;
+  text-align: right;
+}
 .article:nth-child(odd) {
   grid-template-areas: 'info img';
   grid-template-columns: 60% 35%;
+
+}
+.article:nth-child(odd) a {
+  text-align: left;
 }
 .article_info {
   grid-area: info;
@@ -50,6 +58,9 @@
     display: block;
     margin-bottom: 20px;
     padding: 20px 0; 
+  }
+  .article a {
+    text-align: left;
   }
   
 }
