@@ -19,7 +19,7 @@ color: rgb(84, 78, 78);
 
 html,
 body {
-  min-width: 480px;
+  min-width: 380px;
   padding: 0;
   margin: 0;
   font-family: 'Exo 2', sans-serif;
@@ -61,7 +61,6 @@ h4 {
 
 .container {
   max-width: 1300px;
-  min-width: 480px;
   margin: auto;
   overflow: hidden;
 }
