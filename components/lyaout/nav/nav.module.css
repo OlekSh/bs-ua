@@ -103,8 +103,6 @@
 
   .nav_list {
     margin: 0;
-    max-height: 100vh;
-    overflow: auto;
     display: none;
     border-radius: 3px;
   }
@@ -116,10 +114,17 @@
   
   .sendwich {
     display: block;  
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 40px;
   }
   
 } 
 
+@media screen and (max-width: 1100px) and (orientation: landscape) {
+  .nav {
+    max-height: 100vh;
+    overflow: auto;
+  }
+
+}

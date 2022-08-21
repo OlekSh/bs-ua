@@ -37,6 +37,10 @@
   .prepost_info {
     padding-left: 0;
   }
+
+  .prepost_info h2 {
+    text-align: center;
+  }
   
   .prepost_img {
     width: 100%;
