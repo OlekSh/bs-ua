@@ -16,7 +16,9 @@ function PrePost(props) {
               alt={post.category}
               width={400}
               height={300}
-              fill='responsive'
+              layout='responsive'
+              placeholder='blur'
+              blurDataURL='/images/blur.png'
             />
           </div>
           <div className={classes.prepost_info }>
