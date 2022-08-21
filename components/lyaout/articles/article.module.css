@@ -56,3 +56,9 @@
     padding: 20px 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .article_info {
+    padding: 0;
+  }
+}

@@ -22,3 +22,9 @@
   color: rgb(84, 78, 78);
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  .articles_container {
+    padding: 40px 20px;
+  }
+}
