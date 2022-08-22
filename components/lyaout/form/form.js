@@ -16,7 +16,7 @@ function handlerSubmit(ev) {
       email: mail,
       message
     }
-    fetch('/api/contact',{
+    fetch('/api/sendMail',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
