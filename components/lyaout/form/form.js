@@ -31,6 +31,9 @@ function handlerSubmit(ev) {
       setName('');
       setMessage('')
       setSendText('Відправлено');
+      setTimeout(() => {
+        setSendText('Відправити');
+      },3000)
     })
   }
 
