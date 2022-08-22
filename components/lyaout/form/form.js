@@ -3,9 +3,36 @@ import { useState } from 'react';
 import classes from './form.module.css'
 
 function Form() {
-  const [mail, setMail] = useState();
-  const [name, setName] = useState();
-  const [message, setMessage] = useState();
+  const [mail, setMail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [sendText, setSendText] = useState('Відправити')
+
+function handlerSubmit(ev) {
+    ev.preventDefault();
+    console.log("Submit");
+    let mes = {
+      name,
+      email: mail,
+      message
+    }
+    fetch('/api/contact',{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(mes)
+    })
+    .then(res => {
+        res.json();
+    })
+    .then(message => {
+      setMail('');
+      setName('');
+      setMessage('')
+      setSendText('Відправлено');
+    })
+  }
 
 
   function handleInputMail(event) {
@@ -21,10 +48,11 @@ function Form() {
   }
 
   return (
-    <form className={classes.form}> 
-      <h3>Hello {name}  {mail}</h3>
+    <form className={classes.form}
+      onSubmit={handlerSubmit}
+    > 
       <label className={classes.form_field}> 
-        <span>Enter your name </span>
+        <span>Ім'я :</span>
         <input 
           type='text' 
           name="name" 
@@ -33,7 +61,7 @@ function Form() {
           required />
       </label>
       <label className={classes.form_field}> 
-        <span>Enter your email</span>
+        <span>Скринька :</span>
         <input 
           type='mail' 
           name="email"
@@ -43,19 +71,18 @@ function Form() {
           />
       </label>
       <label className={classes.form_field}>
-        <span>Enter your message</span>
+        <span>Повідомлення :</span>
         <textarea
-          valule={message}
+          value={message}
           onChange={handleInputMessage}
         >
 
         </textarea>
       </label>
-      <p>{message}</p>
       <button 
         className={classes.form_submit} 
         type="submit"> 
-          SEND 
+          {sendText}
       </button>
     </form>
   )

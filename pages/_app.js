@@ -12,6 +12,7 @@ const siteDate = {
 }
 
 function MyApp({ Component, pageProps }) {
+ 
   return (
     <ContextSite.Provider value={siteDate}>
       <Head >
