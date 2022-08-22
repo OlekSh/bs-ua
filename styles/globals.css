@@ -73,3 +73,8 @@ h4 {
     font-size: 1.9rem;
   }
 }
+
+::placeholder {
+  font-style: italic;
+  letter-spacing: 1.1px;
+}

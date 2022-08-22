@@ -52,21 +52,23 @@ function handlerSubmit(ev) {
       onSubmit={handlerSubmit}
     > 
       <label className={classes.form_field}> 
-        <span>Ім'я :</span>
+        <span>Ім&#39;я :</span>
         <input 
           type='text' 
           name="name" 
           value={name}
           onChange={handleInputName}
+          placeholder="Введіть ваше ім'я"
           required />
       </label>
       <label className={classes.form_field}> 
-        <span>Скринька :</span>
+        <span>Електронна адреса :</span>
         <input 
           type='mail' 
           name="email"
           value={mail}
           onChange={handleInputMail}
+          placeholder="Введіть вашу електронну адресу"
           required 
           />
       </label>
@@ -75,6 +77,7 @@ function handlerSubmit(ev) {
         <textarea
           value={message}
           onChange={handleInputMessage}
+          placeholder="Введіть ваше повідомлення"
         >
 
         </textarea>
