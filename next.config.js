@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const auth = {
-  user: 'fordevelopresources@gmail.com',
-  pass: 'ddiewtzwaccsyslp',
-  target: 'sourceregister@gmail.com'
+
 }
 
 const nextConfig = {
