@@ -22,10 +22,11 @@ export default function handler(req, res) {
     text: "There is a new article. It's about sending emails, check it out!",
     html: `<div> <h1>Name : ${name} Mail: ${email}</h1> <p>${message}</p> </div>`,
   })
-  .then(res => {
+  .then(responce => {
     res.status(200).json({message: 'Letter sending'})
   })
   .catch(err => {
+    console.log('!!!! SUKA ERROR')
     res.status(500).json({error: 'Failed sending'});
   })
 }

@@ -1,0 +1,27 @@
+.alert {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  font-style: italic;
+  border-radius: 3px;
+}
+.alert p {
+  margin: 5px 0;
+}
+.loading {
+  display: block;
+  background: rgb(215, 230, 11);
+}
+.empty {
+ display: none;
+}
+.success {
+  display: block;
+  background: rgb(4, 149, 11);
+}
+.error {
+  display: block;
+  background: rgb(186, 6, 21);
+  color: #fff;
+}

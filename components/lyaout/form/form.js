@@ -1,21 +1,24 @@
 import { useState } from 'react';
 
+import Alert from '../alert/alert';
+
 import classes from './form.module.css'
 
 function Form() {
   const [mail, setMail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
-  const [sendText, setSendText] = useState('Відправити')
+  const [sendText, setSendText] = useState('Відправити');
+  const [statusForm, setStatusForm] = useState('empty');
 
 function handlerSubmit(ev) {
     ev.preventDefault();
-    console.log("Submit");
     let mes = {
       name,
       email: mail,
       message
     }
+    setStatusForm('loading');
     fetch('/api/sendMail',{
       method: 'POST',
       headers: {
@@ -23,8 +26,10 @@ function handlerSubmit(ev) {
       },
       body: JSON.stringify(mes)
     })
-    .then(res => {
-        res.json();
+    .then(res => {  
+        if(!res.ok)  {
+          throw new Error("res give mistake");
+        }
     })
     .then(message => {
       setMail('');
@@ -34,7 +39,17 @@ function handlerSubmit(ev) {
       setTimeout(() => {
         setSendText('Відправити');
       },3000)
+      setStatusForm('success')
     })
+    .catch(err => {
+      setStatusForm('error')
+    })
+    .finally(() => {
+      setTimeout(() => {
+        setStatusForm('empty');
+      },3000)
+    })
+
   }
 
 
@@ -54,6 +69,7 @@ function handlerSubmit(ev) {
     <form className={classes.form}
       onSubmit={handlerSubmit}
     > 
+      <Alert status={statusForm} />
       <label className={classes.form_field}> 
         <span>Ім&#39;я :</span>
         <input 
